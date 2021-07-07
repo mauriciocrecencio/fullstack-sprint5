@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Componente APP principal  deve conter o placeholder do campo de busca de produtos 1`] = `
+<input
+  class="sc-dIsUp hBRNUh"
+  placeholder="O que você está procurando?"
+  type="search"
+/>
+`;
+
+exports[`Componente APP principal  deve conter o placeholder do campo de busca de produtos 2`] = `Promise {}`;
+
+exports[`Componente APP principal  deve conter todos os itens do menu 1`] = `
+<input
+  class="sc-dIsUp hBRNUh"
+  placeholder="O que você está procurando?"
+  type="search"
+/>
+`;

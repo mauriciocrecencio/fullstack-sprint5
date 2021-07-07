@@ -14,8 +14,8 @@ const SelectSize = () => {
     <>
       <S.SelectSizeText>Selecionar Tamanho: 6</S.SelectSizeText>
       <S.Container>
-        {sizes.map((size) => (
-          <SizeBox size={size} />
+        {sizes.map((size,index) => (
+          <SizeBox key={index} size={size} />
         ))}
       </S.Container>
     </>

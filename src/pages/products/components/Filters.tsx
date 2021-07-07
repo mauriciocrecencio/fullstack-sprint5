@@ -18,6 +18,8 @@ interface IPropsFilters {
 const Filters: React.FunctionComponent<IPropsFilters> = ({
   filters
 }: IPropsFilters) => {
+  // eslint-disable-next-line no-console
+  console.log(filters)
   return (
     <section className="main__filters filters">
       <ul className="filters__list">

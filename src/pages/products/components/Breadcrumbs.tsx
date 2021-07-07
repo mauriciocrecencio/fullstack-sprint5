@@ -1,7 +1,7 @@
+/* eslint-disable no-console */
 import { useContext } from 'react'
 import CategoriesContext from '../../../contexts/CategoriesContext'
-import { ICategories, ICategory } from '../../../interfaces/Categories'
-import { IFilter } from '../../../interfaces/Filter'
+import { ICategory } from '../../../interfaces/Categories'
 
 function BreadcrumbItem({ link, label }: ICategory) {
   return (
@@ -22,14 +22,14 @@ function BreadcrumbItem({ link, label }: ICategory) {
 
 function Breadcrumbs() {
   const { categories } = useContext(CategoriesContext)
-
+  console.log(categories)
   return (
     <section className="main__breadcrumbs breadcrumbs">
       <nav>
         <ol className="breadcrumbs__list">
           {categories.current &&
             categories.current.map((c: ICategory) => (
-              <BreadcrumbItem key={c.id} link={c.link} label={c.label} />
+              <BreadcrumbItem key={c.id} link={c.link} label={c.name!} />
             ))}
         </ol>
       </nav>

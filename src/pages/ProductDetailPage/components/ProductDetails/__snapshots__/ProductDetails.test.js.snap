@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Componente página do produto O snapshot do component deve permanecer sempre o mesmo 1`] = `
+<div
+  class="sc-bdnxRM jpmkCl"
+>
+  <span
+    class="sc-gtsrHT cbMPhD"
+  >
+    Nome teste
+  </span>
+  <span
+    class="sc-jrsJWt glsTHx"
+  >
+    Selecionar Tamanho: 6
+  </span>
+  <div
+    class="sc-pNWdM jrasAX"
+  >
+    <div
+      class="sc-kEqXSa dOoelZ"
+    >
+      6
+    </div>
+    <div
+      class="sc-kEqXSa dOoelZ"
+    >
+      7
+    </div>
+    <div
+      class="sc-kEqXSa dOoelZ"
+    >
+      8
+    </div>
+    <div
+      class="sc-kEqXSa dOoelZ"
+    >
+      10
+    </div>
+    <div
+      class="sc-kEqXSa dOoelZ"
+    >
+      12
+    </div>
+    <div
+      class="sc-kEqXSa dOoelZ"
+    >
+      14
+    </div>
+    <div
+      class="sc-kEqXSa dOoelZ"
+    >
+      15
+    </div>
+  </div>
+  <div
+    class="sc-jSFjdj kFFoyY"
+  >
+    <span
+      class="sc-gKAaRy iwCTiL"
+    >
+      R$ 
+      R$3,40
+    </span>
+    <button
+      class="sc-eCApnc sc-iCoGMd cbWHgP gfXkgX"
+    >
+      Adicionar à sacola
+    </button>
+    <button
+      class="sc-eCApnc sc-fujyAs cbWHgP hxVucD"
+    >
+      Cancelar
+    </button>
+  </div>
+</div>
+`;

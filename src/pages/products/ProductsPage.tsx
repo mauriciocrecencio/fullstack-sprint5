@@ -52,7 +52,8 @@ function ProductsPage() {
       .catch(() => setMessage('Ocorreu um erro ao carregar os produtos...'))
       .finally(() => removeRequest())
   }
-
+  // eslint-disable-next-line no-console
+  console.log(filters)
   return (
     <main className="main">
       <Breadcrumbs></Breadcrumbs>

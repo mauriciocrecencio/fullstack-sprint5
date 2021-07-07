@@ -1,32 +1,32 @@
-import { useEffect, useState } from 'react';
-import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Message from './components/Message';
-import Spinner from './components/Spinner';
-import CategoriesContext from './contexts/CategoriesContext';
-import FilterContext from './contexts/FilterContext';
-import LoadingContext from './contexts/LoadingContext';
-import MessageContext from './contexts/MessageContext';
-import useLoading from './hooks/useLoading';
-import ProductsPage from './pages/products/ProductsPage';
-import CategoriesService from './services/CategoriesService';
+import { useEffect, useState } from 'react'
+import './App.css'
+import Footer from './components/Footer'
+import Header from './components/Header/'
+import Spinner from './components/Spinner'
+import CategoriesContext from './contexts/CategoriesContext'
+import FilterContext from './contexts/FilterContext'
+import LoadingContext from './contexts/LoadingContext'
+import MessageContext from './contexts/MessageContext'
+import useLoading from './hooks/useLoading'
+import Routes from './routes/Routes'
+import CategoriesService from './services/CategoriesService'
+import { GlobalStyle } from './styles/GlobalStyle'
 
 function App() {
-  const [filter, setFilter] = useState('');
-  const [message, setMessage] = useState('');
-  const [categories, setCategories] = useState({});
-  const [addRequest, removeRequest, isLoading] = useLoading();
+  const [filter, setFilter] = useState('')
+  const [message, setMessage] = useState('')
+  const [categories, setCategories] = useState({})
+  const [addRequest, removeRequest, isLoading] = useLoading()
 
   // eslint-disable-next-line
-  useEffect(() => loadCategories(), []);
+  useEffect(() => loadCategories(), [])
 
   function loadCategories() {
-    addRequest();
+    addRequest()
     CategoriesService.get()
-      .then(c => setCategories(c))
-      .catch(() => setMessage("Ocorreu um erro ao carregar as categorias..."))
-      .finally(() => removeRequest());
+      .then((c) => setCategories(c))
+      .catch(() => setMessage('Ocorreu um erro ao carregar as categorias...'))
+      .finally(() => removeRequest())
   }
 
   return (
@@ -36,16 +36,17 @@ function App() {
           <CategoriesContext.Provider value={{ categories }}>
             <Spinner></Spinner>
             <div className="page-container">
-              <Message></Message>
               <Header></Header>
-              <ProductsPage></ProductsPage>
+
+              <GlobalStyle />
+              <Routes />
             </div>
             <Footer></Footer>
           </CategoriesContext.Provider>
         </MessageContext.Provider>
       </LoadingContext.Provider>
     </FilterContext.Provider>
-  );
+  )
 }
 
-export default App;
+export default App

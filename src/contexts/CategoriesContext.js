@@ -1,5 +1,5 @@
-import React from 'react';
+import React from 'react'
 
-const CategoriesContext = React.createContext();
+const CategoriesContext = React.createContext()
 
-export default CategoriesContext;
+export default CategoriesContext

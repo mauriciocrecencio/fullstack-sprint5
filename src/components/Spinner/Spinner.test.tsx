@@ -9,11 +9,11 @@ describe('Spinner component', () => {
         value={{
           addRequest: () => null,
           removeRequest: () => null,
-          isLoading: () => true
+          isLoading: () => true,
         }}
       >
         <Spinner />
-      </LoadingContext.Provider>
+      </LoadingContext.Provider>,
     )
     const element = screen.getByTestId('loading')
     expect(element).toBeInTheDocument()
@@ -24,11 +24,11 @@ describe('Spinner component', () => {
         value={{
           addRequest: () => null,
           removeRequest: () => null,
-          isLoading: () => false
+          isLoading: () => false,
         }}
       >
         <Spinner />
-      </LoadingContext.Provider>
+      </LoadingContext.Provider>,
     )
     const element = screen.getByTestId('Notloading')
     expect(element).toBeInTheDocument()

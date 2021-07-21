@@ -25,6 +25,7 @@
     "coverage": "npm run test -- --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "prettier": "prettier --config .prettierrc.json --check .",
+    "prettier:write": "prettier --config .prettierrc.json --write .",
     "lint": "eslint . --ext .tsx"
   },
   "eslintConfig": {

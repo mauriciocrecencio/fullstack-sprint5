@@ -7,7 +7,7 @@ const ServiceUtils = {
         throw new Error(resp.json())
       }
     })
-  }
+  },
 }
 
 export default ServiceUtils

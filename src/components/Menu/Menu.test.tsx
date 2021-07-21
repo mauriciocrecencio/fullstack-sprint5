@@ -12,13 +12,13 @@ describe('Menu Component', () => {
         value={{
           categories: {
             all: [{ id: 0, label: 'Novidades', link: '#' }],
-            current: [{ id: 0, link: '#', name: 'BreadCrumb Test' }]
+            current: [{ id: 0, link: '#', name: 'BreadCrumb Test' }],
           },
-          setCategories: () => null
+          setCategories: () => null,
         }}
       >
         <Menu />
-      </CategoriesContext.Provider>
+      </CategoriesContext.Provider>,
     )
 
     const element = screen.getByText(/Novidades/i)

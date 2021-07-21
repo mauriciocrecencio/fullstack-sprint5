@@ -8,10 +8,10 @@ jest.mock('react-router-dom', () => ({
       product: {
         image: 'assets/c1.webp',
         name: 'Jaqueta Puffer Juvenil Com Capuz Super Mario Branco Tam 10 a 18',
-        price: '199,90'
-      }
-    }
-  })
+        price: '199,90',
+      },
+    },
+  }),
 }))
 
 describe('ProductDetailPage Component', () => {

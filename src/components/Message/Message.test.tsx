@@ -9,7 +9,7 @@ describe('Message Component', () => {
         value={{ message: 'message test', setMessage: () => null }}
       >
         <Message />
-      </MessageContext.Provider>
+      </MessageContext.Provider>,
     )
 
     const element = screen.getByText('message test')
@@ -21,7 +21,7 @@ describe('Message Component', () => {
     render(
       <MessageContext.Provider value={{ message: '', setMessage: () => null }}>
         <Message />
-      </MessageContext.Provider>
+      </MessageContext.Provider>,
     )
 
     const element = screen.getByTestId('notMessage')
@@ -34,7 +34,7 @@ describe('Message Component', () => {
         value={{ message: 'message test', setMessage: () => null }}
       >
         <Message />
-      </MessageContext.Provider>
+      </MessageContext.Provider>,
     )
 
     const element = screen.getByTestId('closebtn')

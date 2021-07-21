@@ -16,7 +16,7 @@ function Product({ image, name, price }: IProduct) {
     <Link
       to={{
         pathname: `product/${productURI}`,
-        state: { product: { image, name, price } }
+        state: { product: { image, name, price } },
       }}
       className="products__card card"
     >
@@ -64,7 +64,7 @@ function ProductsPage() {
               .filter((p: IProduct) =>
                 filter
                   ? p.name.toUpperCase().indexOf(filter.toUpperCase()) !== -1
-                  : true
+                  : true,
               )
               .map((p: IProduct) => (
                 <Product

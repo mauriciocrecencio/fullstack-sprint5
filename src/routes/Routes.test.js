@@ -12,16 +12,16 @@ let categories = {
     {
       id: 1,
       label: 'Novidades',
-      link: '#home'
-    }
+      link: '#home',
+    },
   ],
   current: [
     {
       id: 1,
       link: '#home',
-      name: 'Home'
-    }
-  ]
+      name: 'Home',
+    },
+  ],
 }
 describe('Routes Component', () => {
   test('Deve renderizar o componente', () => {
@@ -34,21 +34,21 @@ describe('Routes Component', () => {
           value={{
             addRequest: () => null,
             removeRequest: () => null,
-            isLoading: () => false
+            isLoading: () => false,
           }}
         >
           <MessageContext.Provider value={{ message, setMessage }}>
             <CategoriesContext.Provider
               value={{
                 categories,
-                setCategories
+                setCategories,
               }}
             >
               <App />
             </CategoriesContext.Provider>
           </MessageContext.Provider>
         </LoadingContext.Provider>
-      </FilterContext.Provider>
+      </FilterContext.Provider>,
     )
     screen.debug
   })

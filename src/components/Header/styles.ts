@@ -98,7 +98,7 @@ export const SearchIcon = styled.img.attrs(() => ({ src: IconSearch }))`
 export const SearchInput = styled.input.attrs(() => ({
   type: 'search',
   placeholder: 'O que você está procurando?',
-  role: 'search'
+  role: 'search',
 }))`
   height: 40px;
   width: 100%;

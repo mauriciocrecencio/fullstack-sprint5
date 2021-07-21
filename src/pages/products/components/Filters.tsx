@@ -16,16 +16,15 @@ interface IPropsFilters {
 }
 
 const Filters: React.FunctionComponent<IPropsFilters> = ({
-  filters
+  filters,
 }: IPropsFilters) => (
-    <section className="main__filters filters">
-      <ul className="filters__list">
-        {filters.map((f: IFilter) => (
-          <FilterItem key={f.id} label={f.label} />
-        ))}
-      </ul>
-    </section>
-  )
-
+  <section className="main__filters filters">
+    <ul className="filters__list">
+      {filters.map((f: IFilter) => (
+        <FilterItem key={f.id} label={f.label} />
+      ))}
+    </ul>
+  </section>
+)
 
 export default Filters

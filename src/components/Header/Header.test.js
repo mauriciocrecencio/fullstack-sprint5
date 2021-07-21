@@ -12,7 +12,7 @@ describe('Header Component', () => {
     render(
       <FilterContext.Provider value={{ filter: 'a', setFilter: () => null }}>
         <Header />
-      </FilterContext.Provider>
+      </FilterContext.Provider>,
     )
   })
 
@@ -22,7 +22,7 @@ describe('Header Component', () => {
     render(
       <FilterContext.Provider value={{ filter, setFilter }}>
         <Header />
-      </FilterContext.Provider>
+      </FilterContext.Provider>,
     )
     const input = screen.getByRole('search')
 

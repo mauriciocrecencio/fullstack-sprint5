@@ -3,11 +3,11 @@ import { render } from '@testing-library/react'
 import ProductDetails from './index'
 
 describe('Componente página do produto', () => {
-  it('O snapshot do component deve permanecer sempre o mesmo', () => {
+  it('Deve renderizar o componente', () => {
     const { container } = render(
       <ProductDetails name="Nome teste" price="R$3,40" />
     )
-    expect(container.firstChild).toMatchSnapshot()
+    expect(container.firstChild).toBeInTheDocument()
   })
 })
 

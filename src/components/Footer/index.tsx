@@ -3,7 +3,9 @@ function Footer() {
     <footer className="footer">
       <section className="footer__contact">
         <div className="footer__container contact">
-          <p className="contact__info">Receba ofertas e novidades por e-mail</p>
+          <p data-testid="footer" className="contact__info">
+            Receba ofertas e novidades por e-mail
+          </p>
           <form action="/">
             <input
               className="contact__input"

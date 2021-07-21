@@ -10,5 +10,8 @@
   "rules": {
     "no-console": 2, // Remember, this means error!
     "@typescript-eslint/explicit-module-boundary-types": "off"
+  },
+  "env": {
+    "jest": true
   }
 }

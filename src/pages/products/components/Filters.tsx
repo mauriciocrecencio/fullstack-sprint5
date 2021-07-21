@@ -17,10 +17,7 @@ interface IPropsFilters {
 
 const Filters: React.FunctionComponent<IPropsFilters> = ({
   filters
-}: IPropsFilters) => {
-  // eslint-disable-next-line no-console
-  console.log(filters)
-  return (
+}: IPropsFilters) => (
     <section className="main__filters filters">
       <ul className="filters__list">
         {filters.map((f: IFilter) => (
@@ -29,6 +26,6 @@ const Filters: React.FunctionComponent<IPropsFilters> = ({
       </ul>
     </section>
   )
-}
+
 
 export default Filters

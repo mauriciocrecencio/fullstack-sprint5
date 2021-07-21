@@ -11,7 +11,7 @@ const ProductDetails = ({ name, price }: IPropsProductDetails) => {
   return (
     <S.Container>
       <S.ProductName>{name}</S.ProductName>
-      <SelectSize />
+      <SelectSize productName={name} />
       <ActionProductCard price={price} />
     </S.Container>
   )

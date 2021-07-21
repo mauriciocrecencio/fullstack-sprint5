@@ -1,7 +1,7 @@
 import { useContext } from 'react'
-import CategoriesContext from '../contexts/CategoriesContext'
+import CategoriesContext from '../../contexts/CategoriesContext'
 
-function MenuItem({ label }) {
+function MenuItem({ label }: { label: string }) {
   return (
     <li className="menu__item">
       <a className="menu__link" href="#home">

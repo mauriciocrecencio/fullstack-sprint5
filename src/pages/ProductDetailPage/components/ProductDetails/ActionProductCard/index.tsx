@@ -10,10 +10,10 @@ const ActionProductCard = ({ price }: IPropsActionProductCard) => {
   return (
     <S.Container>
       <S.ProductPrice>R$ {price}</S.ProductPrice>
-      <S.AddCartButton onClick={() => history.push('/')}>
+      <S.AddCartButton data-testid="homebtn" onClick={() => history.push('/')}>
         Adicionar à sacola
       </S.AddCartButton>
-      <S.CancelButton onClick={() => history.push('/')}>
+      <S.CancelButton data-testid="homebtn2" onClick={() => history.push('/')}>
         Cancelar
       </S.CancelButton>
     </S.Container>

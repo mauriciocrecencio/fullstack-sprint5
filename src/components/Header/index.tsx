@@ -1,18 +1,10 @@
 import * as S from './styles'
 import { useContext } from 'react'
 import FilterContext from '../../contexts/FilterContext'
-import Menu from '../Menu'
+import Menu from '../Menu/index'
 
 const Header = () => {
   const { setFilter } = useContext(FilterContext)
-
-  /* Maior desafio foi utilizar os mesmos componentes
-para renderizar tanto o conteúdo para mobile, tanto 
-para desktop.
-O único que não consegui foi a img, que precisava
-setar o "attrs" no styledcomponents.
-Até tentei utilizar com background, mas estava
-aparecendo uma borda cinza que não sabia de onde era*/
 
   return (
     <S.Header>

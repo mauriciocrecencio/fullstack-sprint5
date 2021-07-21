@@ -52,12 +52,11 @@ function ProductsPage() {
       .catch(() => setMessage('Ocorreu um erro ao carregar os produtos...'))
       .finally(() => removeRequest())
   }
-  // eslint-disable-next-line no-console
-  console.log(filters)
+
   return (
     <main className="main">
-      <Breadcrumbs></Breadcrumbs>
-      <Filters filters={filters}></Filters>
+      <Breadcrumbs />
+      <Filters filters={filters} />
       <section className="main__products products">
         <div className="products__row">
           <ol className="products__list">
@@ -78,7 +77,7 @@ function ProductsPage() {
           </ol>
         </div>
         <div className="products__row">
-          <ol className="products__list"></ol>
+          <ol className="products__list" />
         </div>
       </section>
     </main>

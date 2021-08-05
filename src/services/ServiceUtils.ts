@@ -1,6 +1,6 @@
 const ServiceUtils = {
-  handleResponse(req: Promise<any>) {
-    return req.then((resp) => {
+  async handleResponse(req: Promise<any>) {
+    return await req.then((resp) => {
       if (resp.ok) {
         return resp.json()
       } else {

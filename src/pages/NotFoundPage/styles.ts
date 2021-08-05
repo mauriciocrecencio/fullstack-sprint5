@@ -14,7 +14,6 @@ export const Container = styled.div`
 `
 
 export const Content = styled.div`
-  /* margin-top: 100px; */
   text-align: center;
   background-color: #bfe9f0;
   padding: 10px 100px;

@@ -12,7 +12,6 @@ import { Link } from 'react-router-dom'
 function Product({ image, name, price }: IProduct) {
   const productURI = name.replaceAll(' ', '%2D')
   return (
-    // Passei a className para o Link do Router, pois estava quebrando o estilo
     <Link
       to={{
         pathname: `product/${productURI}`,
@@ -20,13 +19,11 @@ function Product({ image, name, price }: IProduct) {
       }}
       className="products__card card"
     >
-      {/* <li className="products__card card"> */}
       <div className="card">
         <img className="card__img" src={image} alt="" />
         <p className="card__description">{name}</p>
         <p className="card__price">R$ {price}</p>
       </div>
-      {/* </li> */}
     </Link>
   )
 }

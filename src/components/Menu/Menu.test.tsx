@@ -3,8 +3,6 @@ import { render } from '@testing-library/react'
 import CategoriesContext from '../../contexts/CategoriesContext'
 import Menu from './index'
 
-// jest.mock('./index.tsx')
-
 describe('Menu Component', () => {
   test('Deve renderizar o Menu', () => {
     render(

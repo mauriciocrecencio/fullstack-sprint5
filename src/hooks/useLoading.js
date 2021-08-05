@@ -5,20 +5,17 @@ function useLoading() {
 
   function addRequest() {
     setLiveRequests((liveRequests) => {
-      // console.log(`addRequest ${liveRequests}`);
       return liveRequests + 1
     })
   }
 
   function removeRequest() {
     setLiveRequests((liveRequests) => {
-      // console.log(`removeRequest ${liveRequests}`);
       return liveRequests - 1
     })
   }
 
   function isLoading() {
-    // console.log(`isLoading ${liveRequests}`);
     return liveRequests > 0
   }
 

@@ -116,21 +116,3 @@ export const SearchInput = styled.input.attrs(() => ({
     color: #9b9b9b;
   }
 `
-
-// export const SearchInput = styled.input`
-//   height: 40px;
-//   width: 100%;
-//   border-radius: 4px;
-//   border: 1px solid rgba(0, 0, 0, 0.23);
-//   padding-left: 40px;
-
-//   :hover {
-//     border-color: #000;
-//   }
-//   ::placeholder {
-//     font-size: 0.9375rem;
-//     font-weight: 600;
-//     font-family: "Open Sans";
-//     color: #9b9b9b;
-//   }
-// `;
